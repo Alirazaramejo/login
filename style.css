@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(114, 178, 235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 3px black;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  font-weight: bolder;
+  border-bottom: solid 1px black;
+  padding: 20px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 20px 40px;
+}
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+}
+
+.form-control input {
+  border: 2px solid #8f8d8d;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  font-size: 0.8rem;
+  padding: 2%;
+}
+
+.form-control.success input {
+  border: 2px solid rgb(76, 240, 76);
+}
+
+.form-control.error input {
+  border: 2px solid rgb(236, 52, 52);
+}
+
+.form-control i {
+  position: absolute;
+  top: 37px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: rgb(76, 240, 76);
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: rgb(236, 52, 52);
+}
+
+.form-control small {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: rgb(236, 52, 52);
+}
+
+button {
+  background-color: red;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
