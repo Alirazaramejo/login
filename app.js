@@ -43,6 +43,9 @@ function checkInputs() {
   }else{
     setSuccessFor(password2);
   }
+    if (usernameValue && emailValue && passwordValue && password2Value) {
+    window.location.href = "https://alirazaramejo.github.io/rich-text/";
+  }
 }
 
 
